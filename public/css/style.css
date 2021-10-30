@@ -1,0 +1,99 @@
+#home {
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#home .block {
+  border: 2px solid;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15%;
+}
+#home .block h1 {
+  color: blue;
+  font-size: 1.5rem;
+}
+#home .messages {
+  list-style-type: none;
+  height: 15%;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+#home .messages li {
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: space-around;
+}
+#home .messages li i {
+  color: red;
+}
+
+@media screen and (max-width: 576px) {
+  .block {
+    width: 75% !important;
+  }
+
+  h1 {
+    font-size: 1.1rem !important;
+  }
+
+  .messages {
+    width: 100% !important;
+    align-items: center;
+  }
+  .messages li {
+    width: 80%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: azure;
+}
+
+nav {
+  background: #181818;
+  height: 5vh;
+  display: flex;
+  justify-content: flex-start;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 15%;
+}
+nav ul li {
+  list-style-type: none;
+}
+nav ul li #selected {
+  border-bottom: 1px solid white;
+  padding: 0;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#error {
+  height: 95vh;
+  background: red;
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=style.css.map */

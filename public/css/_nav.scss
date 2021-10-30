@@ -1,0 +1,25 @@
+nav {
+    background: rgb(24, 24, 24);
+    height: 5vh;
+    display: flex;
+    justify-content: flex-start;
+    ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 15%;
+        li {
+            list-style-type: none;
+            #selected {
+                border-bottom: 1px solid white;
+                padding: 0;
+            }
+            a {
+                text-decoration: none;
+                color: white;
+                font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva,
+                    Verdana, sans-serif;
+            }
+        }
+    }
+}
