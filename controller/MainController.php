@@ -30,3 +30,20 @@ function delete()
         require('./view/error.php');
     }
 }
+
+
+function about()
+{
+    $buts = getButs()->fetchAll(PDO::FETCH_ASSOC);
+    require('./view/about.php');
+}
+
+
+function addBut()
+{
+    if (!empty($_POST['but'])) {
+        $but = $_POST['but'];
+        $req = createBut();
+        $req->execute(["but" => $but]);
+    }
+}

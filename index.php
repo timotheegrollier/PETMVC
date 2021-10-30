@@ -9,6 +9,10 @@ if (isset($_GET['action'])) {
         post();
     } elseif ($_GET['action'] == 'delete') {
         delete();
+    } elseif ($_GET['action'] == 'about') {
+        about();
+    } elseif ($_GET['action'] == 'addBut') {
+        addBut();
     }
 } else {
     index();

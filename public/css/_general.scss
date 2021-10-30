@@ -7,3 +7,17 @@ body {
     height: 100vh;
     background-color: azure;
 }
+
+.block {
+    border: 2px solid;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    h1 {
+        color: blue;
+        font-size: 1.5rem;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    }
+}

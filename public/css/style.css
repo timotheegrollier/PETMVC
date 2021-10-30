@@ -5,18 +5,6 @@
   flex-direction: column;
   justify-content: space-around;
 }
-#home .block {
-  border: 2px solid;
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 15%;
-}
-#home .block h1 {
-  color: blue;
-  font-size: 1.5rem;
-}
 #home .messages {
   list-style-type: none;
   height: 15%;
@@ -61,6 +49,20 @@ body {
   background-color: azure;
 }
 
+.block {
+  border: 2px solid;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15%;
+}
+.block h1 {
+  color: blue;
+  font-size: 1.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
 nav {
   background: #181818;
   height: 5vh;
@@ -94,6 +96,24 @@ nav ul li a {
   color: white;
   align-items: center;
   flex-direction: column;
+}
+
+#about {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#about h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: blue;
+}
+#about .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
 }
 
 /*# sourceMappingURL=style.css.map */
