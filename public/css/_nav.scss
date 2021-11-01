@@ -23,3 +23,60 @@ nav {
         }
     }
 }
+
+.burgerBlock {
+    display: none !important;
+}
+.mobileMenu {
+    display: flex;
+    position: absolute;
+    background-color: rgb(24, 24, 24);
+    width: 25%;
+    z-index: 1;
+    // display: flex;
+    justify-content: center;
+    height: 100vh;
+    transform: translateX(-600px);
+    top: 0;
+
+    li {
+        list-style-type: none;
+        margin-top: 10px;
+        #selected {
+            border-bottom: 1px solid white;
+            padding: 0;
+        }
+        a {
+            color: whitesmoke;
+            text-decoration: none;
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+                sans-serif;
+        }
+    }
+}
+
+@media screen and(max-width:850px) {
+    nav {
+        display: none;
+    }
+    .burgerBlock {
+        display: flex !important;
+        justify-content: center;
+        width: 12%;
+        background: rgb(24, 24, 24);
+        .burger {
+            color: whitesmoke;
+            font-size: 2rem;
+        }
+    }
+}
+
+.animBurger {
+    transform: translateX(-500px);
+    transition: 1.2s ease-in-out;
+}
+
+.menuAnim {
+    transform: translateX(0px);
+    transition: 1s ease-in-out;
+}

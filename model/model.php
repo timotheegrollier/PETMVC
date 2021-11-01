@@ -1,22 +1,28 @@
 <?php require('./config/connect.php');
 
-function postMessage()
+function postArticle()
 {
     $bdd = connect();
-    $req = $bdd->prepare('INSERT INTO message(message) VALUES(:message)');
+    $req = $bdd->prepare('INSERT INTO articles(name,content) VALUES(:name,:content)');
     return $req;
 }
 
-function getMessages()
+function getArticles()
 {
     $bdd = connect();
-    return $bdd->query('SELECT * FROM message');
+    return $bdd->query('SELECT id,name FROM articles');
 }
 
-function deleteMessage($id)
+function getArticle($articleId)
 {
     $bdd = connect();
-    return $bdd->query("DELETE FROM message WHERE id=$id");
+    return $bdd->query('SELECT * from articles WHERE id =' . $articleId);
+}
+
+function deleteList($id)
+{
+    $bdd = connect();
+    return $bdd->query("DELETE FROM but WHERE id=$id");
 }
 
 function createBut()
@@ -29,5 +35,5 @@ function createBut()
 function getButs()
 {
     $bdd = connect();
-    return $bdd->query('SELECT but FROM but');
+    return $bdd->query('SELECT * FROM but');
 }

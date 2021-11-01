@@ -4,14 +4,32 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    h2 {
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-        color: blue;
-    }
+
     .content {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 80%;
+        width: 90%;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        p {
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        ul {
+            width: 50%;
+            li {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:650px) {
+    .content {
+        ul {
+            width: 80% !important;
+        }
     }
 }

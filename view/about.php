@@ -1,17 +1,12 @@
-<?php $title = 'home'; ?>
+<?php $title = 'PETMV | About'; ?>
 
 <?php ob_start(); ?>
 
 
 <div id="about">
-    <div class="block">
-        <h1>About</h1>
-    </div>
 
-    <form action="?action=addBut" method="POST">
-        <input type="text" name="but" autocomplete="off">
-        <input type="submit" value="Ajouter un but">
-    </form>
+
+
     <div class="content">
         <p>This website was made for :</p>
         <ul>
@@ -21,7 +16,10 @@
             <?php if ($buts) {
                 foreach ($buts as $but) {
             ?>
-            <li><?= $but['but']; ?></li>
+            <li><?= $but['but']; ?>
+                <a data-turbo="false" id="delBut" href="?action=deleteBut&id=<?= $but['id'] ?>"> <i
+                        class="fas fa-minus-circle"></i></a>
+            </li>
             <?php
                 }
             }
@@ -29,6 +27,10 @@
         </ul>
     </div>
 
+    <form action="?action=addBut" method="POST">
+        <input type="text" name="but" autocomplete="off">
+        <input type="submit" value="Ajouter un but">
+    </form>
 </div>
 
 <?php $content = ob_get_clean(); ?>

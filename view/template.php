@@ -14,6 +14,7 @@
 <body>
     <?php require('./view/nav.php') ?>
     <?= $content ?>
+    <?php require('js.php'); ?>
 
 </body>
 

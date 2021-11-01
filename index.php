@@ -7,12 +7,14 @@ if (isset($_GET['action'])) {
         index();
     } elseif ($_GET['action'] == 'post') {
         post();
-    } elseif ($_GET['action'] == 'delete') {
-        delete();
+    } elseif ($_GET['action'] == 'deleteBut') {
+        deleteBut();
     } elseif ($_GET['action'] == 'about') {
         about();
     } elseif ($_GET['action'] == 'addBut') {
         addBut();
+    } elseif ($_GET['action'] == 'showArticle') {
+        showArticle();
     }
 } else {
     index();
