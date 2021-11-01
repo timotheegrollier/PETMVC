@@ -47,6 +47,10 @@
   border-radius: 10px;
   height: 50px;
 }
+#home .new_article p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-left: 5px;
+}
 #home .new_article:hover {
   background-color: grey;
   cursor: pointer;
